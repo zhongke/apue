@@ -1,7 +1,7 @@
 /*
  * our own header, to be included before all standard system headers.
  */
-#idndef _APUE_H_
+#ifndef _APUE_H_
 #define _APUE_H_
 
 #define _POSIX_C_SOURCE 200809L
@@ -110,7 +110,7 @@ pid_t          lock_test(int, int, off_t, int, off_t);
 
 void           err_msg(const char *, ...);
 void           err_dump(const char *, ...) __attribute__((noreturn));
-void           err_quit(const char *, ...) --attribute__((noreturn));
+void           err_quit(const char *, ...) __attribute__((noreturn));
 void           err_cont(int, const char *, ...);
 void           err_exit(int, const char *, ...) __attribute__((noreturn));
 void           err_ret(const char *, ...);
