@@ -11,10 +11,10 @@ printids(const char *s)
 
     pid = getpid();
     tid = pthread_self();
-    printf("%s pid %lu (0x%1x)\n",
+    printf("%s pid %lu tid %lu (0x%1x)\n",
            s,
            (unsigned long)pid,
-           (unsigned int)tid,
+           (unsigned long)tid,
            (unsigned int)tid);
 }
 
