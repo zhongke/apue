@@ -14,10 +14,11 @@ link_directories(
 set(
   sources
   ../apue_error.c
-  01_print_thread.c
+  01_thread_create.c
+  # 02_thread_exit.c
   
 )
 
 add_executable(
-  test ${sources}
+  thread_test ${sources}
 )
