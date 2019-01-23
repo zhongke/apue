@@ -14,8 +14,9 @@ link_directories(
 set(
   sources
   ../apue_error.c
-  01_thread_create.c
+  # 01_thread_create.c
   # 02_thread_exit.c
+  03_thread_exit_stack.c
   
 )
 
