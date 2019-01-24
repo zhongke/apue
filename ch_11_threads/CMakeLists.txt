@@ -23,3 +23,7 @@ set(
 add_executable(
   thread_test ${sources}
 )
+
+target_link_libraries(thread_test
+  pthread
+)

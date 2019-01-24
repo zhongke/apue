@@ -10,7 +10,7 @@ void
 printfoo(const char *s, const struct foo *fp)
 {
     printf("%s", s);
-    printf("  structure at 0x%1x\n", (unsigned int)fp);
+    printf("  structure at 0x%lx\n", (unsigned long)fp);
     printf("  foo.a = %d\n", fp->a);
     printf("  foo.b = %d\n", fp->b);
     printf("  foo.c = %d\n", fp->c);
@@ -29,7 +29,7 @@ thr_fn1()
 void *
 thr_fn2()
 {
-    printfoo("thread 2: ID is %lu\n", (unsigned long)pthread_self());
+    printfoo("thread 2: ID is %lu\n", (struct foo *)pthread_self());
     pthread_exit((void *)0);
 }
 
