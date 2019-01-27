@@ -16,7 +16,8 @@ set(
   ../apue_error.c
   # 01_thread_create.c
   # 02_thread_exit.c
-  03_thread_exit_stack.c
+  04_thread_cleanup.c
+
   
 )
 
