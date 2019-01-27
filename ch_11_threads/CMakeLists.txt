@@ -17,9 +17,10 @@ set(
   # 01_thread_create.c
   # 02_thread_exit.c
   # 04_thread_cleanup.c
-  05_thread_mutex.c
-  06_thread_2_mutex.c
-  07_thread_mutex_simplify.c
+  #05_thread_mutex.c
+  # 06_thread_2_mutex.c
+  # 07_thread_mutex_simplify.c
+  08_thread_mutex_timedlock.c
 
   
 )
