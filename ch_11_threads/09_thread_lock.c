@@ -48,7 +48,7 @@ job_insert(struct queue *qp, struct job *jp)
         if (qp->q_head != NULL)
                 qp->q_head->j_prev = jp;
         else
-                qp->q_tail = jp;
+                qp->q_tail = jp;    /* list was empty */
 
         qp->q_head = jp;
 
@@ -69,7 +69,7 @@ job_append(struct queue *qp, struct job *jp)
         if (qp->q_tail != NULL)
                 qp->q_tail->j_next = jp;
         else
-                qp->q_tail = jp;
+                qp->q_head = jp;
         qp->q_tail = jp;
 
         pthread_rwlock_unlock(&qp->q_lock);
