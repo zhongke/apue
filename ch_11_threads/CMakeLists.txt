@@ -21,7 +21,9 @@ set(
   # 06_thread_2_mutex.c
   # 07_thread_mutex_simplify.c
   # 08_thread_mutex_timedlock.c
-  09_thread_lock.c
+  # 09_thread_lock.c
+  # 10_thread_condition.c
+  11_thread_barrier.c
 
   
 )
