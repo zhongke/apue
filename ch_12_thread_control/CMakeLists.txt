@@ -14,6 +14,8 @@ link_directories(
 set(
   sources
   ../apue_error.c
+  01_makethread.c
+  02_thread_recursive_mutex.c
 
   
 )
