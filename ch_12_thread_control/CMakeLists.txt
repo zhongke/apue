@@ -8,14 +8,15 @@ include_directories(
 link_directories(
 )
 
-# add_definitions(-std=c++17)
+add_definitions(-std=c11)
 
 
 set(
   sources
   ../apue_error.c
-  01_makethread.c
-  02_thread_recursive_mutex.c
+  # 01_makethread.c
+  # 02_thread_recursive_mutex.c
+  03_env_non_reentrant.c
 
   
 )
