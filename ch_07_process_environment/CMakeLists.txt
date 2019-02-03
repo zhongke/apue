@@ -14,8 +14,10 @@ add_definitions(-std=c11)
 set(
   sources
   ../apue_error.c
+  # 01_exit_handler.c
+  02_command_process.c
   # variables_longjmp.c
-  print_resource_limits.c
+  # print_resource_limits.c
 )
 
 add_executable(
