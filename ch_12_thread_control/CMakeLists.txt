@@ -8,7 +8,7 @@ include_directories(
 link_directories(
 )
 
-add_definitions(-std=c11)
+add_definitions(-std=c17)
 
 
 set(
@@ -19,7 +19,8 @@ set(
   # 03_env_non_reentrant.c
   # 04_env_reentrant.c
   # 05_env_compatible.c
-  06_sync_signal.c
+  # 06_sync_signal.c
+  07_thread_atfork.c
 
   
 )
