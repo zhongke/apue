@@ -12,7 +12,7 @@ main()
 
         if (signal(SIGINT, sig_int) == SIG_ERR)
                 err_sys("signal error");
-        
+
         printf("%% ");    /* print prompt (printf reqiures %% to print %) */
         while (fgets(buf, MAXLINE, stdin) != NULL) {
                 if(buf[strlen(buf-1) -1] == '\n')
