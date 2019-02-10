@@ -32,7 +32,12 @@
 /*
  * Default file access permissions for new files.
  */
-#define FILE_MODE (FILE_MODE | S_IXUSR | S_IXGRP | X_IXOTH)
+#define FILE_MODE (S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH)
+
+/*
+ * Default permissions for new directories.
+ */
+#define DIR_MODE  (FILE_MODE | S_IXUSR | S_IXGRP | X_IXOTH)
 
 typedef void Sigfunc(int);    /* for signal handlers */
 
