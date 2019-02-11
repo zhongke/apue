@@ -69,7 +69,7 @@ err_exit(int error, const char *fmt, ...)
  * Print a message, dump core, and terminate.
  */
 void
-erro_dump(const char *fmt, ...)
+err_dump(const char *fmt, ...)
 {
     va_list ap;
 
